@@ -10,6 +10,7 @@ public class Main {
         task6();
         task7();
         task8();
+        task9();
     }
     public static void task1() {
         System.out.println("Задача 1");
@@ -60,6 +61,21 @@ public class Main {
         for (int i = 1; i <= 12; i++) {
             total = total + salary;
             System.out.println(" Месяц " + i + " сумма накоплений равна " + total + " рублей ");
+        }
+    }
+    public static void task9() {
+        System.out.println("Задача 9");
+        int salary = 29000;
+        double total = 0;
+
+        int salaryWithPenny = salary * 100;
+        int totalWithPenny = 0;
+        for (int i = 1; i <= 12; i++) {
+            totalWithPenny = totalWithPenny +  totalWithPenny / 100;
+            totalWithPenny = totalWithPenny + salaryWithPenny;
+
+            total = totalWithPenny / 100.;
+            System.out.println(" Месяц " + i + ", сумма накоплений равна " + total + " рублей ");
         }
     }
 }
