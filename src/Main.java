@@ -11,6 +11,7 @@ public class Main {
         task7();
         task8();
         task9();
+        task10();
     }
     public static void task1() {
         System.out.println("Задача 1");
@@ -78,4 +79,12 @@ public class Main {
             System.out.println(" Месяц " + i + ", сумма накоплений равна " + total + " рублей ");
         }
     }
+    public static void task10() {
+        System.out.println("Задача 10");
+        System.out.println(" Таблица умножения на 2 ");
+        int i = 2;
+            for (int j = 1; j <= 10; j++) {
+                System.out.println(i + " * " + j + " = " + (i * j));
+            }
+        }
 }
