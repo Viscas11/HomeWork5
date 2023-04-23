@@ -71,11 +71,11 @@ public class Main {
 
         int salaryWithPenny = salary * 100;
         int totalWithPenny = 0;
-        for (int i = 1; i <= 12; i++) {
+        for (int i = 1; i <= 12; i++){
             totalWithPenny = totalWithPenny +  totalWithPenny / 100;
             totalWithPenny = totalWithPenny + salaryWithPenny;
 
-            total = totalWithPenny / 100.;
+            total = totalWithPenny / 100;
             System.out.println(" Месяц " + i + ", сумма накоплений равна " + total + " рублей ");
         }
     }
